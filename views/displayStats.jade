@@ -43,6 +43,8 @@ html
 						p Temperatura durante el día: 18 y 26°C
 						p Temperatura durante la noche: 15 y 18°C
 						p La froración se comienza a dar a los 90 días
+						p Tu planta está creciendo #{plant.p_over}% más que una planta normal.
+						p Tu planta está #{plant.p_below}% debajo de las condiciones ideales.
 		.row
 			.col.s4.info
 				.container
@@ -62,16 +64,13 @@ html
 					.stages.center
 						h5 Ritmo de crecimiento
 						p 
-							if measurement.stage = true
+							if plant.state = true
 								i.mdi-action-thumb-up.medium 
 								br
-								b ¡Lleva un ritmo óptimo de crecimiento!
-							else if measurement.stage = false
+							else
 								i.mdi-action-thumb-down.large
 								br
-								b Tu planta lleva un ritmo estándar de crecimiento.
-							else
-								b Aún no podemos saber.
+						p Tu plantita esta en: #{plant.stage}
 			.col.s4
 				.plant-image
 					img.responsive-img.plant(src='../images/image3.png' alt='Unsplashed background img 1' style='display: inline-block;')
@@ -82,7 +81,7 @@ html
 				.container
 					.information3
 						h5 Altura
-						p Esta planta mide #{measurement.hight}cm desde la raíz.
+						p Esta planta mide #{measurement.height}m desde la raíz.
 				.container
 					.information4
 						h5 PH de la tierra
@@ -90,7 +89,7 @@ html
 				.container
 					.information5
 						h5 Tiempo transcurrido
-						p Hasta este momento llevas #{measurement.life_days} días cultivandola.
+						p Hasta este momento llevas #{plant.life_days} días cultivandola.
 				.container.sell-button
 					a.btn-large.waves-effect.waves-light.grey.darken-2.tooltipped(href='#' data-position="left" data-delay="50" data-tooltip="Planta inmadura. No vendible.") Vender
 					i.fa.fa-facebook.fa-3x.light-blue-text.text-darken-4.social
@@ -102,7 +101,7 @@ html
 				.meter2.orange
 					span(style='width: 25%;')
 			.progress-text
-				h4  Tiempo de maduración: #{measurement.life_percentage}%
+				h4  Tiempo de maduración: #{plant.life_days} días de #{plant.total_days}.
 		footer
 			script(src='https://code.jquery.com/jquery-2.1.1.min.js')
 			script(src='https://fb.me/react-0.14.2.min.js')
