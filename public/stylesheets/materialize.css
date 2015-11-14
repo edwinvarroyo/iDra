@@ -5083,7 +5083,7 @@ nav ul a span.badge {
 .row {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px; }
+  margin-bottom: 0px; }
   .row:after {
     content: "";
     display: table;
@@ -5279,7 +5279,7 @@ nav ul a span.badge {
 
 nav {
   color: #fff;
-  background-color: #689F38;
+  background-color: #5ACC00;
   width: 100%;
   height: 56px;
   line-height: 56px; }
@@ -5838,17 +5838,36 @@ small {
   text-transform: uppercase;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent; }
+  .btn-large2{
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    outline: 0;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+  }
 
 .btn.disabled, .disabled.btn-large, .btn-floating.disabled, .btn-large.disabled, .btn:disabled, .btn-large:disabled, .btn-large:disabled, .btn-floating:disabled {
   background-color: #DFDFDF !important;
   box-shadow: none;
   color: #9F9F9F !important;
   cursor: default; }
+  .btn-large2{
+    background-color: #DFDFDF !important;
+    box-shadow: none;
+    color: #d84315 !important;
+    cursor: default;
+  }
   .btn.disabled *, .disabled.btn-large *, .btn-floating.disabled *, .btn-large.disabled *, .btn:disabled *, .btn-large:disabled *, .btn-large:disabled *, .btn-floating:disabled * {
     pointer-events: none; }
   .btn.disabled:hover, .disabled.btn-large:hover, .btn-floating.disabled:hover, .btn-large.disabled:hover, .btn:disabled:hover, .btn-large:disabled:hover, .btn-large:disabled:hover, .btn-floating:disabled:hover {
     background-color: #DFDFDF;
     color: #9F9F9F; }
+
 
 .btn i, .btn-large i, .btn-floating i, .btn-large i, .btn-flat i {
   font-size: 1.3rem;

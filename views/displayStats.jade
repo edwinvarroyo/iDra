@@ -14,10 +14,36 @@ html
 		.navbar-fixed
 			nav
 				.nav-wrapper
-					a.brand-logo(id='logo-container' href='/') 
-						i.fa.fa-leaf  iDra
+					a.brand-logo(id='logo-container' href='/') &nbsp; iDra
+					a.brand-logo.center(href='#openModal') Planta de Chiles Serranos
+					ul.right.hide-on-med-and-down
+						li
+							a(href='/') Regresar
+		.modalDialog(id='openModalChile')
+			.container.transparent
+				a.close(href='#close' title='Close') X
+				.container.center.chile
+					img.responsive-img.chileGrande(src='images/chile.png' alt='El chile' style='display: inline-block;')
+		.modalDialog(id='openModal')
+			.container
+				a.close(href='#close' title='Close') X
+				.container.modal1.center
+					h3 Chiles Serranos
+				.row
+					.col.s6
+						.center
+							i.mdi-action-info-outline.medium
+						p  El chile serrano es una variedad de chile que se consume en México, caracterizado por ser pequeño, de forma cilíndrica y a veces terminado en punta. Se considera picante y generalmente se acompaña con sus semillas y venas, también muy picantes.
+					.col.s6
+						.center
+							i.mdi-action-group-work.medium
+						p Se cosecha entre 110-130 días
+						p Se cosecha en 5 días
+						p Temperatura durante el día: 18 y 26°C
+						p Temperatura durante la noche: 15 y 18°C
+						p La froración se comienza a dar a los 90 días
 		.row
-			.col.s4
+			.col.s4.info
 				.container
 					.information1.waves-effect.waves-light
 						
@@ -27,9 +53,12 @@ html
 					.information2
 						h5 Temperatura	#{measurement.temperature}
 						p Su temperatura actual es de 22%.
+				.badge
+					a(href='#openModalChile')
+						img.responsive-img.chile(src='images/chile.png' alt='El chile' style='display: inline-block;')
 			.col.s4
 				.plant-image
-					img.responsive-img(src='images/image3.png' alt='Unsplashed background img 1' style='display: inline-block;')
+					img.responsive-img.plant(src='images/image3.png' alt='Unsplashed background img 1' style='display: inline-block;')
 			.col.s4
 				.container
 					.information3
@@ -39,8 +68,10 @@ html
 					.information4
 						h5 Tiempo transcurrido
 						p Hasta este momento llevas 15 días cultivandola.
+				.container.sell-button
+					a.btn-large.waves-effect.waves-light.deep-orange.darken-3(href='#') Vender
 		.container
-			.container
+			div
 				.meter
 					span(style='width: 25%;')
 			.progress-text

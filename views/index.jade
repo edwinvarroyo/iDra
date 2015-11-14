@@ -11,9 +11,15 @@ html
 			nav
 				.nav-wrapper
 					a.brand-logo(id='logo-container' href='/') &nbsp; iDra 
+					a.brand-logo.center(href='/')
+						i.fa.fa-leaf 
 					ul.right.hide-on-med-and-down
 						li
-							a(href='/login') 
+							a(href='#about') Acerca de
+						li
+							a(href='#Adventages') Ventajas
+						li
+							a(href='/Stadistics')
 							i.mdi-action-input   &nbsp;
 block head
 		.parallax-container
@@ -25,6 +31,9 @@ block head
 						i.fa.fa-leaf  
 					.row.center
 						h5.heder.col.s12-light.grey-text.text-lighten-2 La técnica agrícola que permite producir plantas sin emplear el suelo.
+					br
+					br
+					br
 					.row.center
 						a.btn-large.waves-effect.waves-light.deep-orange.darken-3(href='/Stadistics') Descúbrelo
 					br
@@ -32,7 +41,7 @@ block head
 					br
 			.parallax
 				img.responsive-img(src='images/image1.jpg' alt='Unsplashed background img 1' style='display: block;')
-		.container
+		.container(id='about')
 			.section
 				.row
 					h3
@@ -52,7 +61,7 @@ block head
 					br
 			.parallax
 				img.responsive-img(src='images/image2.jpg' alt='Unsplashed background img 1' style='display: block;')
-		.container
+		.container(id='Adventages')
 			.section
 				.row.center
 					.col.s4
@@ -70,9 +79,14 @@ block head
 		footer.page-footer
 			.container
 				.row
-					.col.16.s12
-						h5.white-text iDra
-						p.white-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut esse praesentium dolores totam nulla aliquid placeat, iusto repudiandae, tempora rerum fugiat error vel. Expedita ipsum magni unde. Repellat, id eos!
+					.col.16.s12.center
+						h3.white-text iDra
+						p.white-text ¿Qué estás esperando? ¡Conoce el nuevo desarrollo de Hidroponia!
+						.row.center
+							a.btn-large2.waves-effect.waves-light.deep-orange.lighten-5(href='/Stadistics') Descúbrelo
+							br
+							br
+
 			script(src='https://code.jquery.com/jquery-2.1.1.min.js')
 			script(src='/javascript/materialize.js')
 			script(src='/javascript/init.js')
