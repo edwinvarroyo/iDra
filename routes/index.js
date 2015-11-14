@@ -46,7 +46,9 @@ router.get('/create_new/:id', function(req, res, next){
 	sensor.measurements.push({
 		moisture : 0,
 		humidity : 0,
-		temperature : 0
+		temperature : 0,
+		ph: 7,
+		height: 0.06,
 	})
 
 	sensor.save(function(err){console.log(err)})
