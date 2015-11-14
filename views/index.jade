@@ -1,5 +1,27 @@
-extends layout
+doctype html
+html
+	head
+		title= iDra
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/materialize.css')
+		link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+	body
+		.navbar-fixed
+			nav
+				.nav-wrapper
+				a.brand-logo(id='logo-container' href='#') Logo
+		.parallax-container
+			.section.no-pad-bot
+				.container
+					br
+					br
+					h1.header.center.teal-text.text-lighten-2 Hidroponia
+					.row.center
+						h5.heder.col.s12-light A modern responsive front-end framework based on Material Design
+					.row.center
+						a.btn-large.waves-effect.waves-light.teal.lighten-1(href='#') Get Started
+					br
+					br
+			.parallax
+				img(src='images/image1.jpg' alt='Unsplashed background img 1')
 
-block content
-  h1= title
-  p Welcome to #{title}
