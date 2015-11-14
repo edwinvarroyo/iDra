@@ -36,3 +36,13 @@ router.post('/sensors/:id', function(req, res, next){
 })
 
 module.exports = router;
+
+
+router.get('/create_new/:id', function(req, res, next){
+	var sensor = new sensorModel({
+		module_id: req.params.id
+	})
+	sensor.save()
+
+	res.send("succes")
+})
