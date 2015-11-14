@@ -4,6 +4,8 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var express = require('express');
+var mongoose = require('mongoose');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -56,5 +58,12 @@ app.use(function(err, req, res, next) {
   });
 });
 
+// mongo
+
+
+
+
+
+// mongo
 
 module.exports = app;
