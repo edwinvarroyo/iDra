@@ -1,5 +1,7 @@
-express = require('express');
-router = express.Router();
+var express = require('express');
+var router = express.Router();
+
+var sensorModel = require('../models/sensors')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -10,8 +12,27 @@ router.get('/', function(req, res, next) {
 /* Modules */
 
 router.post('/sensors/:id', function(req, res, next){
-	console.log(req.body)
-	res.send("hell yhea")
+	
+	console.log(req.params.id)
+
+	sensorModel.findOne({"module_id": req.params.id},
+		function(erro, sensor){
+			if (erro)
+				console.log(err)
+			else{
+
+				
+				sensor.measurements.push(req.body)
+
+
+				sensor.save(function (err){
+					console.log(err)
+				})	
+
+				res.send("hell yhea")
+			}
+		}
+	)
 })
 
 module.exports = router;

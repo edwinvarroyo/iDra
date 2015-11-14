@@ -7,6 +7,10 @@ html
 		link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
 		link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet")
 	body.stats
+
+		- last = plant.measurements.length - 1
+		- measurement = plant.measurements[last]
+
 		.navbar-fixed
 			nav
 				.nav-wrapper
@@ -16,11 +20,12 @@ html
 			.col.s4
 				.container
 					.information1.waves-effect.waves-light
-						h5 Humedad
+						
+						h5 Humedad: #{measurement.humidity}
 						p Cuenta con una humedad del 45%.
 				.container
 					.information2
-						h5 Temperatura	
+						h5 Temperatura	#{measurement.temperature}
 						p Su temperatura actual es de 22%.
 			.col.s4
 				.plant-image
