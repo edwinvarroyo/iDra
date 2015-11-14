@@ -42,7 +42,14 @@ router.get('/create_new/:id', function(req, res, next){
 	var sensor = new sensorModel({
 		module_id: req.params.id
 	})
-	sensor.save()
+
+	sensor.measurements.push({
+		moisture : 0,
+		humidity : 0,
+		temperature : 0
+	})
+
+	sensor.save(function(err){console.log(err)})
 
 	res.send("succes")
 })
