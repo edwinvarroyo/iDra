@@ -35,6 +35,9 @@ a {
 	padding: 10px;
 	box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
 }
+.social{
+	padding-top: 10px;
+}
 .meter > span {
   display: block;
   height: 100%;
@@ -98,7 +101,7 @@ a {
 .information2{
 	border-top: 10px solid #E65100;
 	background-color: #FFFFFF;
-	margin-top: 50px;
+	margin-top: 30px;
 	padding-bottom: 5px;
 	padding-left: 10px;
 }
@@ -109,17 +112,35 @@ a {
 	padding-bottom: 5px;
 	padding-left: 10px;
 }
+.stages{
+	float: right;
+}
+.more-info{
+	padding-top: 100px;
+	margin-right: 0px;
+	float:right;
+	display:inline-block;
+}
 .information4{
 	border-top: 10px solid #E65100;
 	background-color: #FFFFFF;
-	margin-top: 100px;
+	margin-top: 30px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	position: relative;
+	bottom: 10px;
+}
+.information5{
+	border-top: 10px solid #E65100;
+	background-color: #FFFFFF;
+	margin-top: 20px;
 	padding-bottom: 5px;
 	padding-left: 10px;
 	position: relative;
 	bottom: 10px;
 }
 .sell-button{
-	padding-top: 50px;
+	padding-top: 30px;
 	padding-left: 30px;
 }
 .badge{
