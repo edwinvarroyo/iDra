@@ -19,6 +19,10 @@ router.get('/', function(req, res, next) {
 }).get('/signup', function(req, res) {
   res.render('signup');
 });
+router.get('/Stadistics', function(req, res, next) {
+  res.render('displayStats', { title: 'Express' });
+});
+
 
 module.exports = router;
 

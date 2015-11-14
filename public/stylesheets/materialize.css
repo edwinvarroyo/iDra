@@ -2114,7 +2114,8 @@ img.responsive-img, video.responsive-video {
 .parallax-container {
   position: relative;
   overflow: hidden;
-  height: 500px; }
+  height: 500px;
+  background-color: rgba(33, 33, 33, 0.5); }
 
 .parallax {
   position: absolute;
@@ -2200,13 +2201,13 @@ ul.staggered-list li {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #ee6e73; }
+  background-color: #d84315; }
   footer.page-footer .footer-copyright {
     overflow: hidden;
     height: 50px;
     line-height: 50px;
     color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(51, 51, 51, 0.08); }
+    background-color: rgba(51, 51, 51, 0.06); }
 
 table, th, td {
   border: none; }
@@ -5278,7 +5279,7 @@ nav ul a span.badge {
 
 nav {
   color: #fff;
-  background-color: #1565C0;
+  background-color: #689F38;
   width: 100%;
   height: 56px;
   line-height: 56px; }

@@ -1,25 +1,32 @@
 doctype html
 html
 	head
-		title= iDra
+		title iDra
 		link(rel='stylesheet', href='/stylesheets/style.css')
 		link(rel='stylesheet', href='/stylesheets/materialize.css')
 		link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+		link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet")
 	body
 		.navbar-fixed
 			nav
 				.nav-wrapper
-					a.brand-logo(id='logo-container' href='/') &nbsp; Logo
+					a.brand-logo(id='logo-container' href='/') &nbsp; iDra 
+					ul.right.hide-on-med-and-down
+						li
+							a(href='/login') 
+							i.mdi-action-input   &nbsp;
+block head
 		.parallax-container
 			.section.no-pad-bot
-				.container
+				.container.center
 					br
 					br
-					h1.header.center.grey-text.text-lighten-2 Hidroponia
+					h1.header.center.grey-text.text-lighten-2 iDra
+						i.fa.fa-leaf  
 					.row.center
-						h5.heder.col.s12-light.grey-text.text-lighten-2 A modern responsive front-end framework based on Material Design
+						h5.heder.col.s12-light.grey-text.text-lighten-2 La técnica agrícola que permite producir plantas sin emplear el suelo.
 					.row.center
-						a.btn-large.waves-effect.waves-light.teal.lighten-1(href='/Stadistics') Get Started
+						a.btn-large.waves-effect.waves-light.deep-orange.darken-3(href='/Stadistics') Descúbrelo
 					br
 					br
 					br
@@ -29,19 +36,18 @@ html
 			.section
 				.row
 					h3
-						i.mdi-content-send.brown-text
-					h4 Contact Us
-					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+						i.mdi-action-label.deep-orange-text.text-darken-3
+					h3 Acerca de la Hidroponia
+					h6 Es un conjunto de técnicas que sustituye al suelo también es denominada agricultura sin suelo. La hidroponía te permite diseñar estructuras simples y/o complejas favoreciendo las condiciones ambientales idóneas para producir cualquier planta de tipo herbáceo  aprovechando en su totalidad cualquier área (azoteas jardines, suelos infértiles, terrenos escabrosos, etc) sin importar las dimensiones como el estado físico de estas.  
+					br
+					br
 		.parallax-container.valign-wrapper
 			.section.no-pad-bot
 				.container
 					br
 					br
-					h1.header.center.grey-text.text-lighten-2 Hidroponia
 					.row.center
-						h5.heder.col.s12-light.grey-text.text-lighten-2 A modern responsive front-end framework based on Material Design
-					.row.center
-						a.btn-large.waves-effect.waves-light.teal.lighten-1(href='#') Get Started
+						h3.heder.col.s12-light.grey-text.text-lighten-2 La hidroponía permite cultivar de manera casera o de forma comercial; hortalizas, flores, hierbas medicinales, aromáticas, libres de insecticidas tóxicos, logrando mejorar nuestra salud y calidad de vida
 					br
 					br
 			.parallax
@@ -50,17 +56,20 @@ html
 			.section
 				.row.center
 					.col.s4
-						h3 Algo
-						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, iste commodi odio, dolore explicabo similique laboriosam, mollitia molestias ipsa voluptatum quibusdam recusandae rem tempore modi provident. Architecto ea placeat nihil?
+						i.fa.fa-hourglass-half.fa-5x
+						h3 Eficiente
+						p  Para todas aquellas personas preocupadas por el medio ambiente, la hidroponía representa una alternativa más ecológica a la producción convencional, pues el aprovechamiento de los recursos se optimiza a tal punto que es posible cuantificarlos.
 					.col.s4
-						h3 Algo
-						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, iste commodi odio, dolore explicabo similique laboriosam, mollitia molestias ipsa voluptatum quibusdam recusandae rem tempore modi provident. Architecto ea placeat nihil?
+						i.fa.fa-heart.fa-5x
+						h3 Saludable
+						p  Como los cultivos hidropónicos pueden utilizar menos área, son más resistentes a las plagas y usan hasta un 98% menos agua que los cultivos tradicionales.
 					.col.s4
-						h3 Algo
-						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, iste commodi odio, dolore explicabo similique laboriosam, mollitia molestias ipsa voluptatum quibusdam recusandae rem tempore modi provident. Architecto ea placeat nihil?
+						i.fa.fa-money.fa-5x
+						h3 Redituable
+						p  La hidroponía representa una opción de producción en la cual se pueden obtener ganancias económicas muy altas si se sabe manejar adecuadamente el cultivo y al mismo tiempo se consigue una ventana de negocio adecuada.
 		footer.page-footer
 			.container
-				.row.footer
+				.row
 					.col.16.s12
 						h5.white-text iDra
 						p.white-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut esse praesentium dolores totam nulla aliquid placeat, iusto repudiandae, tempora rerum fugiat error vel. Expedita ipsum magni unde. Repellat, id eos!

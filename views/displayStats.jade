@@ -1,24 +1,49 @@
 doctype html
 html
 	head
-		title= iDra
+		title iDra
 		link(rel='stylesheet', href='/stylesheets/style.css')
 		link(rel='stylesheet', href='/stylesheets/materialize.css')
 		link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
-	body
+		link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet")
+	body.stats
 		.navbar-fixed
 			nav
 				.nav-wrapper
-					a.brand-logo(id='logo-container' href='/') &nbsp; Logo
-		
-		footer.page-footer
+					a.brand-logo(id='logo-container' href='/') 
+						i.fa.fa-leaf  iDra
+		.row
+			.col.s4
+				.container
+					.information1.waves-effect.waves-light
+						h5 Humedad
+						p Cuenta con una humedad del 45%.
+				.container
+					.information2
+						h5 Temperatura	
+						p Su temperatura actual es de 22%.
+			.col.s4
+				.plant-image
+					img.responsive-img(src='images/image3.png' alt='Unsplashed background img 1' style='display: inline-block;')
+			.col.s4
+				.container
+					.information3
+						h5 Altura
+						p Esta planta mide 5cm desde la raíz.
+				.container
+					.information4
+						h5 Tiempo transcurrido
+						p Hasta este momento llevas 15 días cultivandola.
+		.container
 			.container
-				.row.footer
-					.col.16.s12
-						h5.white-text iDra
-						p.white-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut esse praesentium dolores totam nulla aliquid placeat, iusto repudiandae, tempora rerum fugiat error vel. Expedita ipsum magni unde. Repellat, id eos!
+				.meter
+					span(style='width: 25%;')
+			.progress-text
+				h4  Madurez: 30%
+		footer
 			script(src='https://code.jquery.com/jquery-2.1.1.min.js')
 			script(src='https://fb.me/react-0.14.2.min.js')
 			script(src='https://fb.me/react-dom-0.14.2.min.js')
 			script(src='/javascript/materialize.js')
 			script(src='/javascript/init.js')
+		block javascripts

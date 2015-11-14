@@ -1,19 +1,21 @@
-extends layout
+extends index
 
-block content
-  .fondo
-    .index
-      p Inicia Sesion
-    
-    .registro
-      form(method="post", action="/api/user")
+block head
+  .row
+    .container.center
+      h1 Inicia Sesión
+        .container.deep-orange.darken-3.forms
+          .registro
+            form(method="post", action="/api/user")
         
-        input(type="text",name="username",placeholder="Username")
-        br
+              input(type="text",name="username",placeholder="Username")
+              br
          
-        input(type="password",name="password",placeholder="Contraseña")
-        br
-        input(type="submit", class="submit")
-      br
-      br
-      a(href="/signup",class="lin") Registrate
+              input(type="password",name="password",placeholder="Contraseña")
+              br
+              input.btn-large.waves-effect.waves-light(type="submit", class="submit")
+              br
+              br
+              a(href="/signup",class="lin") Registrate
+  footer
+    block javascripts
