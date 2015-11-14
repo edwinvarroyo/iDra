@@ -49,7 +49,7 @@ html
 			.col.s4.info
 				.container
 					.information1.waves-effect.waves-light
-						h5 Humedad: 
+						h5 Humedad
 						p Cuenta con una humedad del #{measurement.humidity}% en el 
 							b ambiente 
 							y una humedad de #{measurement.moisture}% en la 
@@ -97,10 +97,10 @@ html
 					a( href="https://twitter.com/intent/tweet?text=Conoce+la+agricultura+del+futuro.&via=iDra")
 						i.fa.fa-twitter.fa-3x.light-blue-text.text-darken-5.social
 		.container
-			div
+			.center
 				.meter
 					span(style='width: 100%;')
-				.meter2.orange.tooltipped(data-position="botton" data-delay="50" data-tooltip="#{plant.life_days} días transcurridos")
+				.meter2.tooltipped(data-position="botton" data-delay="50" data-tooltip="#{plant.life_days} días transcurridos")
 					span.tooltipped(style='width: 25%;')
 			.progress-text
 				h4  Tiempo de maduración: #{plant.life_days} días de #{plant.total_days}.
