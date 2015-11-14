@@ -12,6 +12,11 @@
     "express": "~4.13.1",
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "geolib": "^2.0.14",
+    "mongoose": "^3.8.24",
+    "query-string": "^1.0.0",
+    "request": "^2.53.0",
+    "stylus": "0.42.3"
   }
 }
