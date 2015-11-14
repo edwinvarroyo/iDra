@@ -92,14 +92,16 @@ html
 						p Hasta este momento llevas #{plant.life_days} días cultivandola.
 				.container.sell-button
 					a.btn-large.waves-effect.waves-light.grey.darken-2.tooltipped(href='#' data-position="left" data-delay="50" data-tooltip="Planta inmadura. No vendible.") Vender
-					i.fa.fa-facebook.fa-3x.light-blue-text.text-darken-4.social
-					i.fa.fa-twitter.fa-3x.light-blue-text.text-darken-5.social
+					a(href="https://plus.google.com/share?url={Https://iDra.com}" onclick="javascript:window.open(this.href,'','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;")
+						img(src="https://www.gstatic.com/images/icons/gplus-32.png" alt="Share on Google+" style='margin-left: 10px;')
+					a( href="https://twitter.com/intent/tweet?text=Conoce+la+agricultura+del+futuro.&via=iDra")
+						i.fa.fa-twitter.fa-3x.light-blue-text.text-darken-5.social
 		.container
 			div
 				.meter
 					span(style='width: 100%;')
-				.meter2.orange
-					span(style='width: 25%;')
+				.meter2.orange.tooltipped(data-position="botton" data-delay="50" data-tooltip="#{plant.life_days} días transcurridos")
+					span.tooltipped(style='width: 25%;')
 			.progress-text
 				h4  Tiempo de maduración: #{plant.life_days} días de #{plant.total_days}.
 		footer
@@ -108,4 +110,5 @@ html
 			script(src='https://fb.me/react-dom-0.14.2.min.js')
 			script(src='/javascript/materialize.js')
 			script(src='/javascript/init.js')
+			script(src="https://apis.google.com/js/platform.js" async defer)
 		block javascripts
